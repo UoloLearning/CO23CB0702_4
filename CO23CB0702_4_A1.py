@@ -1,8 +1,10 @@
-sum = 0
-while True:
-    num = int(input("Enter a number: "))
-    if num < 0:
+string = input("Enter a string: ")
+i = 0
+while i < len(string):
+    if string[i] == " ":
         break
-    if num > 0:
-        sum += num
-print("The sum of all the positive numbers entered is:", sum)
+    if string[i] == "":
+        i += 1
+        continue
+    print(string[i])
+    i += 1
